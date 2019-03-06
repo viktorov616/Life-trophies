@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "server": "nodemon ./server/start.js",
+    "wds": "webpack-dev-server --no-info --hide-modules --hot --debug --devtool eval --output-pathinfo --watch --colors --inline --history-api-fallback --content-base --display-error-details --mode development"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "mongoose": "^5.4.17",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-hot-loader": "^4.7.2",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.13.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
