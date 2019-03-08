@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "lib":[
+      "es5",
+      "es6",
+      "es7",
+      "esnext",
+      "dom",
+      "esnext"
+    ],
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "api/*": ["client/src/api/*"],
+      "components/*": ["client/src/components/*"],
+      "constants/*": ["client/src/constants/*"],
+      "interfaces/*": ["client/src/interfaces/*"],
+      "pages/*": ["client/src/pages/*"],
+      "src/*": ["client/src/*"],
+      "stores/*": ["client/src/stores/*"],
+      "utils/*": ["client/src/utils/*"],
+    }
+  },
+  "include": [
+    "./client/src/**/*"
+  ]
+}
