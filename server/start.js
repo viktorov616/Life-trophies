@@ -3,7 +3,7 @@ require('dotenv').config({ path: './variables.env' });
 const mongoose = require('mongoose');
 
 const fs = require('fs');
-
+console.log(process.env.DATABASE)
 // Connect to MongoDB
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
@@ -13,8 +13,16 @@ mongoose.connection.on('error', (err) => {
 mongoose.connection.on('connecting', () => {
   console.log('connecting');
 });
+mongoose.connection.on('connected', () => {
+  console.log('connected');
+});
 
 // models
+require('./models/Category')
+require('./models/Quality')
+require('./models/Status')
+require('./models/Trophy')
+require('./models/User')
 
 const app = require('./server');
 

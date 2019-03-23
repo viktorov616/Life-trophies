@@ -12,4 +12,4 @@ const qualitySchema = new Schema({
 
 qualitySchema.plugin(mongodbErrorHandler);
 
-module.exports = mongoose.model('quality', qualitySchema);
+module.exports = mongoose.model('Quality', qualitySchema);

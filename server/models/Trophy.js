@@ -26,9 +26,8 @@ const trophySchema = new Schema({
   },
   date: {
     type: Date,
-    required: 'You must supply a date'
   },
-  status: {
+  statusId: { // TODO: make research, maybe change for just status
     type: mongoose.Schema.ObjectId,
     ref: 'Status',
     required: 'You must supply a status',
@@ -37,4 +36,4 @@ const trophySchema = new Schema({
 
 trophySchema.plugin(mongodbErrorHandler);
 
-module.exports = mongoose.model('trophy', trophySchema);
+module.exports = mongoose.model('Trophy', trophySchema);

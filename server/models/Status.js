@@ -12,4 +12,4 @@ const statusSchema = new Schema({
 
 statusSchema.plugin(mongodbErrorHandler);
 
-module.exports = mongoose.model('status', categorySchema);
+module.exports = mongoose.model('Status', statusSchema);

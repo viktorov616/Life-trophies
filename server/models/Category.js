@@ -12,4 +12,4 @@ const categorySchema = new Schema({
 
 categorySchema.plugin(mongodbErrorHandler);
 
-module.exports = mongoose.model('category', categorySchema);
+module.exports = mongoose.model('Category', categorySchema);
