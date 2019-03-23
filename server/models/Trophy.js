@@ -24,6 +24,15 @@ const trophySchema = new Schema({
     ref: 'Quality',
     required: 'You must supply a quality id',
   },
+  date: {
+    type: Date,
+    required: 'You must supply a date'
+  },
+  status: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'Status',
+    required: 'You must supply a status',
+  }
 });
 
 trophySchema.plugin(mongodbErrorHandler);
