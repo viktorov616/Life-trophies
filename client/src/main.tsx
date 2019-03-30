@@ -1,11 +1,15 @@
-import * as React    from 'react';
+import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App           from 'src/App';
-import { Router }    from '@reach/router';
+import App from 'src/App';
+import { Router } from '@reach/router';
+import GlobalStyle from 'src/styles/globalStyles';
 
 ReactDOM.render(
-  <Router>
-    <App path="/" />
-  </Router>,
+  <div>
+    <GlobalStyle />
+    <Router>
+      <App path="/" />
+    </Router>
+  </div>,
   document.getElementById('root'),
 );

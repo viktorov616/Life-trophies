@@ -7,7 +7,7 @@ function TrophyForm({
   const [description, setDescription] = React.useState('');
   const [category, setCategory] = React.useState('');
   const [quality, setQuality] = React.useState('');
-  console.log({ name, description, category, quality });
+
   return (
     <form>
       <input

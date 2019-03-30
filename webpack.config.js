@@ -1,14 +1,13 @@
-const webpack                     = require('webpack');
-const CleanWebpackPlugin          = require('clean-webpack-plugin');
-const ForkTsCheckerWebpackPlugin  = require('fork-ts-checker-webpack-plugin');
-const path                        = require('path');
-const nodeExternals               = require('webpack-node-externals');
+const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
-const { NODE_ENV }                = process.env;
-const publicPath                  = '/public/assets/';
-console.log(path.join(__dirname, publicPath))
-const jsName                      = 'bundle.js';
+const { NODE_ENV } = process.env;
+const publicPath = '/public/assets/';
+const jsName = 'bundle.js';
 const plugins = [
   new ForkTsCheckerWebpackPlugin({
     tslint: './tslint.json',

@@ -3,7 +3,7 @@ require('dotenv').config({ path: './variables.env' });
 const mongoose = require('mongoose');
 
 const fs = require('fs');
-console.log(process.env.DATABASE)
+
 // Connect to MongoDB
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
