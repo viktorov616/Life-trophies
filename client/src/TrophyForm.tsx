@@ -1,4 +1,6 @@
 import * as React from 'react';
+import InputField from 'src/forms/InputField';
+import TextAreaField from 'src/forms/TextAreaField';
 
 function TrophyForm({
 
@@ -10,17 +12,19 @@ function TrophyForm({
 
   return (
     <form>
-      <input
+      <InputField
         id="trophy-name"
         name="trophy-name"
         value={name}
+        label="Name"
         onChange={event => setName(event.target.value)}
       />
 
-      <textarea
+      <TextAreaField
         id="trophy-description"
         name="trophy-description"
         value={description}
+        label="Description"
         onChange={event => setDescription(event.target.value)}
       />
 

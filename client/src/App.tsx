@@ -7,9 +7,9 @@ const App: React.SFC = ({
 }) => (
     <div>
       App
-      {/* <TrophyForm /> */}
-      <CategoryForm />
-      <QualityForm />
+      <TrophyForm />
+      {/* <CategoryForm /> */}
+      {/* <QualityForm /> */}
     </div>
   );
 
